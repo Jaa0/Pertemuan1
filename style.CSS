@@ -1,0 +1,14 @@
+tr > *{
+    border: 1px solid black;
+}
+table > tr> td {
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px 48px;
+    background-color: black;
+
+}
