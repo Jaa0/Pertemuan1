@@ -6,11 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
+    <!-- <style>
+        p{
+            font-size: 20px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .heading{
+            color: blue;
+        }
+        #header3{
+            color: purple;
+        }
+        /* !important itu commmand buat prioritasin */
+        /* hirarki nya itu inline, id, class, tag */
+    </style> -->
+    <link rel="stylesheet" href="style.CSS">
+<!-- </head>
 <body>
+    <h1 style="color:red">Hi</h1>
+    <h2 class="heading">Hi</h2>
+    <h3 class="heading" id="header3">Hi</h3>
+    <h4>Hi</h4>
+    <h5>Hi</h5>
+    <h6>Hi</h6>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur 
+         adipisicing elit. Quisquam repellat sequi, 
+         vitae 
+         laudantium eveniet 
+         saepe? In rerum magni obcaecati, nam 
+          <i>blanditiis provident nulla!</i> Atque soluta 
+           nesciunt 
+          aliquam, <b>repellendus</b> 
+          neque <span>hi</span> odio!
+          
+    </p>
+    <a href="https://youtube.com">youtube</a>
     <ul>
+        <div>
+            <h1>judul</h1>
+            <p>deskripsi</p>
+        </div>
         <li>Ayam</li>
+        <li>banteng</li>
     </ul>
+    <ol>
+        <li>Ayam</li>
+        <li>sapi</li>
+    </ol>
     <table>
         <tr>
             <th>ID</th>
@@ -23,23 +69,61 @@
             <td>Ervin </td>
             <td>Mentor</td>
             <td>laki-laki</td>
-            <table>
-                <form action="#">
-                    <input type="text" name="student_name" id=" ">
-                    <input type="number">
-                    <input type="email">
-                    <input type="password">
-                    <div>
-                        
-                    </div>
-                </form>
-                
-            </table>
         </tr>
     </table>
+                <form action="#">
+                    <input type="text" name="student_name" id="studentname" placeholder="Student name here...">
+                    <input type="number" name="Quantity" id="Quantity" placeholder="Quantity here.." min ="5" max="100">
+                    <input type="email" name="email" id="email" placeholder="email here...">
+                    <input type="password" name="password" id="password">
+                    <div>
+                        <label for="male">male</label>
+                        <input type="radio" name="gender" id="male">
+                        <label for="femlae">female</label>
+                        <input type="radio" name="gender" id="female">
+                    </div>
+                    <input type="submit" >
+                    <button type="reset"> reset </button>
+                </form>
+                
+            
+        
+
 </body>
-</html>
+</html> -->
 <!-- inline = kasih style langsung di  -->
-<!-- internal = kasih style di tempat yang sama  tapi tidak langusng seperti inkine -->
+<!-- internal = kasih style di tempat yang sama  tapi tidak langusng seperti inline -->
 <!-- external = style melalui beda file  -->
 <!-- global selector *{}     -->
+
+<body>
+    <section id="contacform">
+        <div class="heading">
+            <h2>Contact Us</h2>
+            <p>Feel free to ask if you have Questions!</p>
+        </div>
+        <form action="#" class="form">
+            <div class="input-group">
+                <label for="subject">Subject</label>
+                <input type="text" name="subject" id="subject" placeholder="Subject here...">
+            </div>
+            <div class="input-group">
+                <label for="full_name">Full Name</label>
+                <input type="text" name="full_name" id="full_name" placeholder="Full name here...">
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email here...">
+            </div>
+            <div class="input-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="6" placeholder="Message Here..."></textarea>
+            </div>
+            <div class="input-group">
+                <input type="submit" value="submit">
+                
+            </div>
+            
+        </form>
+    </section>
+</body>
